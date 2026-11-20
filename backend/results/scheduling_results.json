@@ -1,0 +1,653 @@
+{
+  "config": {
+    "departments": {
+      "Pulmonology": 2,
+      "Gastroenterology": 2,
+      "General Medicine": 3,
+      "Cardiology": 2,
+      "Dermatology": 2,
+      "Neurology": 2,
+      "Orthopedics": 2,
+      "ENT": 1
+    },
+    "doctors": 16,
+    "day_minutes": 360,
+    "daily_limit": 14,
+    "warmup_days": 7,
+    "measured_days": 28,
+    "seeds": 20,
+    "demand_levels": [
+      0.6,
+      0.85,
+      1.0,
+      1.2,
+      1.5
+    ],
+    "priority_mix": {
+      "Urgent": 0.15,
+      "High": 0.25,
+      "Routine": 0.6
+    },
+    "weights": {
+      "wait": 1.0,
+      "pref": 1.5,
+      "util": 0.3,
+      "imbalance": 0.4
+    },
+    "priority_weights": {
+      "Urgent": 10.0,
+      "High": 2.0,
+      "Routine": 0.3
+    },
+    "baseline_load": 1.0,
+    "common_random_numbers": true
+  },
+  "summary": {
+    "0.6": {
+      "fcfs": {
+        "mean_wait_days": {
+          "mean": 0.0018974586932689254,
+          "std": 0.0013776926926286604
+        },
+        "mean_excess_wait_days": {
+          "mean": 0.0006415144176381575,
+          "std": 0.00071474200906893
+        },
+        "urgent_wait_days": {
+          "mean": 0.002183103854567329,
+          "std": 0.003088656908517231
+        },
+        "high_wait_days": {
+          "mean": 0.0021868950283266226,
+          "std": 0.0016104838464558846
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 99.96741405931779,
+          "std": 0.10345225902654089
+        },
+        "preference_satisfaction_pct": {
+          "mean": 18.169622162725197,
+          "std": 0.5972142541414287
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 57.80978732638889,
+          "std": 1.1082266082411705
+        },
+        "patients": {
+          "mean": 3116.4,
+          "std": 58.132951069079574
+        }
+      },
+      "fixed": {
+        "mean_wait_days": {
+          "mean": 0.037529755690092356,
+          "std": 0.011968060725440445
+        },
+        "mean_excess_wait_days": {
+          "mean": 0.01234467138399078,
+          "std": 0.004841565631815972
+        },
+        "urgent_wait_days": {
+          "mean": 0.04037358529311487,
+          "std": 0.015960236098303684
+        },
+        "high_wait_days": {
+          "mean": 0.04030569196162946,
+          "std": 0.013456507318215736
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 99.39441340672494,
+          "std": 0.4455898770656287
+        },
+        "preference_satisfaction_pct": {
+          "mean": 18.599239438459797,
+          "std": 0.6524179639341375
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 75.09874131944444,
+          "std": 1.4731786887825642
+        },
+        "patients": {
+          "mean": 3116.4,
+          "std": 58.132951069079574
+        }
+      },
+      "proposed": {
+        "mean_wait_days": {
+          "mean": 1.8357435755199467,
+          "std": 0.041649732802386215
+        },
+        "mean_excess_wait_days": {
+          "mean": 0.1132797847149053,
+          "std": 0.008699079525422216
+        },
+        "urgent_wait_days": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "high_wait_days": {
+          "mean": 0.062422571034202436,
+          "std": 0.017173578020576487
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "preference_satisfaction_pct": {
+          "mean": 72.91486524800706,
+          "std": 0.7390404617698421
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 59.466688368055564,
+          "std": 1.1628455655785512
+        },
+        "patients": {
+          "mean": 3116.4,
+          "std": 58.132951069079574
+        }
+      }
+    },
+    "0.85": {
+      "fcfs": {
+        "mean_wait_days": {
+          "mean": 0.08620684101589365,
+          "std": 0.019112870734916045
+        },
+        "mean_excess_wait_days": {
+          "mean": 0.027059566147787477,
+          "std": 0.0058031781026439905
+        },
+        "urgent_wait_days": {
+          "mean": 0.08446725383636881,
+          "std": 0.02039551374652162
+        },
+        "high_wait_days": {
+          "mean": 0.08794434715482345,
+          "std": 0.01916279356403461
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 98.95405787236118,
+          "std": 0.3589326710254305
+        },
+        "preference_satisfaction_pct": {
+          "mean": 19.64210703244926,
+          "std": 0.7536571643043342
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 82.18098958333334,
+          "std": 1.2771944935355826
+        },
+        "patients": {
+          "mean": 4424.4,
+          "std": 71.40336126541943
+        }
+      },
+      "fixed": {
+        "mean_wait_days": {
+          "mean": 2.443689187512782,
+          "std": 0.27010339084376317
+        },
+        "mean_excess_wait_days": {
+          "mean": 1.2743322340134235,
+          "std": 0.18540925535608369
+        },
+        "urgent_wait_days": {
+          "mean": 2.4344116045904443,
+          "std": 0.27001604078673785
+        },
+        "high_wait_days": {
+          "mean": 2.4509330723330214,
+          "std": 0.2729330254488155
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 31.313341918228197,
+          "std": 6.168852703689176
+        },
+        "preference_satisfaction_pct": {
+          "mean": 32.78988451565415,
+          "std": 1.4258276936898593
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 99.85243055555557,
+          "std": 0.23689329946172263
+        },
+        "patients": {
+          "mean": 4424.4,
+          "std": 71.40336126541943
+        }
+      },
+      "proposed": {
+        "mean_wait_days": {
+          "mean": 1.9553103700657009,
+          "std": 0.0376799772951944
+        },
+        "mean_excess_wait_days": {
+          "mean": 0.19038075666615556,
+          "std": 0.016891021981664995
+        },
+        "urgent_wait_days": {
+          "mean": 0.00438380158820996,
+          "std": 0.0028664815974515914
+        },
+        "high_wait_days": {
+          "mean": 0.3905839739853526,
+          "std": 0.03802350840580027
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 99.94747717665886,
+          "std": 0.09738888339633991
+        },
+        "preference_satisfaction_pct": {
+          "mean": 75.06662885420792,
+          "std": 0.5617675022521283
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 84.6826171875,
+          "std": 1.199010451003709
+        },
+        "patients": {
+          "mean": 4424.4,
+          "std": 71.40336126541943
+        }
+      }
+    },
+    "1.0": {
+      "fcfs": {
+        "mean_wait_days": {
+          "mean": 1.0049839227473953,
+          "std": 0.24110853153315523
+        },
+        "mean_excess_wait_days": {
+          "mean": 0.40331995768655676,
+          "std": 0.12741318711641628
+        },
+        "urgent_wait_days": {
+          "mean": 1.0180088350310297,
+          "std": 0.24584744542487402
+        },
+        "high_wait_days": {
+          "mean": 1.0046008670560103,
+          "std": 0.23986228872157941
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 73.75209335477204,
+          "std": 8.579125907215122
+        },
+        "preference_satisfaction_pct": {
+          "mean": 30.373472912797986,
+          "std": 2.1806673716900407
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 95.869140625,
+          "std": 1.1319261171070292
+        },
+        "patients": {
+          "mean": 5194.15,
+          "std": 96.43094679614009
+        }
+      },
+      "fixed": {
+        "mean_wait_days": {
+          "mean": 6.335166889609356,
+          "std": 0.44819394348388375
+        },
+        "mean_excess_wait_days": {
+          "mean": 4.6232218262799165,
+          "std": 0.4311453849812645
+        },
+        "urgent_wait_days": {
+          "mean": 6.335329680804745,
+          "std": 0.4676936023389607
+        },
+        "high_wait_days": {
+          "mean": 6.326625264162991,
+          "std": 0.4552929739904904
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 2.729877071796479,
+          "std": 1.879326624521176
+        },
+        "preference_satisfaction_pct": {
+          "mean": 14.220656388822551,
+          "std": 1.6863350308019096
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "patients": {
+          "mean": 5194.15,
+          "std": 96.43094679614009
+        }
+      },
+      "proposed": {
+        "mean_wait_days": {
+          "mean": 2.7077794562557997,
+          "std": 0.1796084973108745
+        },
+        "mean_excess_wait_days": {
+          "mean": 0.867303578139615,
+          "std": 0.18468576474276308
+        },
+        "urgent_wait_days": {
+          "mean": 0.08688198432729857,
+          "std": 0.04316406420443652
+        },
+        "high_wait_days": {
+          "mean": 1.6632024787884503,
+          "std": 0.2838908863338565
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 97.46633717484846,
+          "std": 1.2705753829909499
+        },
+        "preference_satisfaction_pct": {
+          "mean": 68.79162650132227,
+          "std": 3.2505754231372244
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 96.26736111111111,
+          "std": 0.8389699126266551
+        },
+        "patients": {
+          "mean": 5194.15,
+          "std": 96.43094679614009
+        }
+      }
+    },
+    "1.2": {
+      "fcfs": {
+        "mean_wait_days": {
+          "mean": 4.80170984795207,
+          "std": 0.27958263353631324
+        },
+        "mean_excess_wait_days": {
+          "mean": 3.1998734408367158,
+          "std": 0.24413131706750887
+        },
+        "urgent_wait_days": {
+          "mean": 4.8175311721366425,
+          "std": 0.291261165098625
+        },
+        "high_wait_days": {
+          "mean": 4.791301221388682,
+          "std": 0.28244228871993093
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 6.602765155719245,
+          "std": 2.570087675588672
+        },
+        "preference_satisfaction_pct": {
+          "mean": 20.16517958602001,
+          "std": 1.480406171338976
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 97.72352430555556,
+          "std": 0.23344380826286867
+        },
+        "patients": {
+          "mean": 6220.65,
+          "std": 79.70525390462036
+        }
+      },
+      "fixed": {
+        "mean_wait_days": {
+          "mean": 11.700016268947213,
+          "std": 0.35672381686487475
+        },
+        "mean_excess_wait_days": {
+          "mean": 9.839874382125942,
+          "std": 0.3571615895416824
+        },
+        "urgent_wait_days": {
+          "mean": 11.714710441430416,
+          "std": 0.37655381335267113
+        },
+        "high_wait_days": {
+          "mean": 11.673714524210585,
+          "std": 0.3871886046360559
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 0.01610307974820993,
+          "std": 0.03833708034634429
+        },
+        "preference_satisfaction_pct": {
+          "mean": 4.069660488803801,
+          "std": 0.5977637381760902
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "patients": {
+          "mean": 6220.65,
+          "std": 79.70525390462036
+        }
+      },
+      "proposed": {
+        "mean_wait_days": {
+          "mean": 5.882039519501953,
+          "std": 0.24653764535419115
+        },
+        "mean_excess_wait_days": {
+          "mean": 3.9945527083164065,
+          "std": 0.24741826753423748
+        },
+        "urgent_wait_days": {
+          "mean": 0.4067951338153416,
+          "std": 0.05177890594468874
+        },
+        "high_wait_days": {
+          "mean": 5.412351666077807,
+          "std": 0.2881107327209269
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 92.99750474824835,
+          "std": 0.9299896870846158
+        },
+        "preference_satisfaction_pct": {
+          "mean": 27.59477482023837,
+          "std": 2.1749061396153175
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 97.91341145833333,
+          "std": 0.21844956961960219
+        },
+        "patients": {
+          "mean": 6220.65,
+          "std": 79.70525390462036
+        }
+      }
+    },
+    "1.5": {
+      "fcfs": {
+        "mean_wait_days": {
+          "mean": 11.09842029526852,
+          "std": 0.3462294077638057
+        },
+        "mean_excess_wait_days": {
+          "mean": 9.251042774905347,
+          "std": 0.3514810732633009
+        },
+        "urgent_wait_days": {
+          "mean": 11.138992186699918,
+          "std": 0.3784040725564316
+        },
+        "high_wait_days": {
+          "mean": 11.080305213952457,
+          "std": 0.34954857536738193
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 0.013338760710041073,
+          "std": 0.04227723726984325
+        },
+        "preference_satisfaction_pct": {
+          "mean": 4.6819507940785305,
+          "std": 0.557336984425068
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 97.85644531249999,
+          "std": 0.20754275611005385
+        },
+        "patients": {
+          "mean": 7744.6,
+          "std": 110.43070225258916
+        }
+      },
+      "fixed": {
+        "mean_wait_days": {
+          "mean": 19.749832152939312,
+          "std": 0.4877073337598766
+        },
+        "mean_excess_wait_days": {
+          "mean": 17.866678302833225,
+          "std": 0.4943470364153242
+        },
+        "urgent_wait_days": {
+          "mean": 19.80239069450395,
+          "std": 0.5566916764573571
+        },
+        "high_wait_days": {
+          "mean": 19.71222047818197,
+          "std": 0.4901816114947135
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "preference_satisfaction_pct": {
+          "mean": 0.7815399487381046,
+          "std": 0.14928829994911044
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "patients": {
+          "mean": 7744.6,
+          "std": 110.43070225258916
+        }
+      },
+      "proposed": {
+        "mean_wait_days": {
+          "mean": 11.572927645789838,
+          "std": 0.3396997093794544
+        },
+        "mean_excess_wait_days": {
+          "mean": 9.690265789129901,
+          "std": 0.34860477719421684
+        },
+        "urgent_wait_days": {
+          "mean": 1.2339809129507404,
+          "std": 0.16776475519449233
+        },
+        "high_wait_days": {
+          "mean": 11.226347481038035,
+          "std": 0.3376400246049132
+        },
+        "urgent_within_1_day_pct": {
+          "mean": 89.46990105458487,
+          "std": 1.1970271119458382
+        },
+        "preference_satisfaction_pct": {
+          "mean": 11.638928505743387,
+          "std": 0.6009064758598909
+        },
+        "scheduled_pct": {
+          "mean": 100.0,
+          "std": 0.0
+        },
+        "doctor_utilization_pct": {
+          "mean": 97.90635850694444,
+          "std": 0.23647233346156962
+        },
+        "patients": {
+          "mean": 7744.6,
+          "std": 110.43070225258916
+        }
+      }
+    }
+  },
+  "constraint_violations": {
+    "fcfs": 0,
+    "fixed": 0,
+    "proposed": 0
+  },
+  "physician_absence": {
+    "fixed": {
+      "mean_delay_days": 6.3004122662427005,
+      "affected_mean": 28.6,
+      "rescheduled_pct": 100.0,
+      "violations": 0
+    },
+    "proposed": {
+      "mean_delay_days": 0.08739485272446731,
+      "affected_mean": 28.6,
+      "rescheduled_pct": 100.0,
+      "violations": 0
+    }
+  },
+  "headline": {
+    "urgent_wait_reduction_pct_vs_fcfs": 91.46549800575647,
+    "urgent_within_1_day_fcfs": 73.75209335477204,
+    "urgent_within_1_day_proposed": 97.46633717484846
+  },
+  "runtime_seconds": 59.8,
+  "generated_at": "2026-11-20T17:22:45"
+}

@@ -1,0 +1,17 @@
+[
+ {
+  "version": 1,
+  "accepted": true,
+  "kind": "base",
+  "timestamp": "2026-11-20T23:35:53",
+  "train_samples": 243,
+  "real_cases": 0,
+  "benchmark": {
+   "accuracy": 1.0,
+   "macro_f1": 1.0,
+   "top3_accuracy": 1.0,
+   "n": 61
+  },
+  "message": "MLP selected by the research pipeline (4-fold CV on D1)."
+ }
+]

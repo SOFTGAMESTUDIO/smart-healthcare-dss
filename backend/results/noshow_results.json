@@ -1,0 +1,5 @@
+{
+  "status": "not_run",
+  "message": "D3 not found at /home/claude/src/smart-healthcare-dss/backend/data/d3/KaggleV2-May-2016.csv. Download Kaggle 'Medical Appointment No Shows' and place it there.",
+  "generated_at": "2026-11-20T17:19:16"
+}
